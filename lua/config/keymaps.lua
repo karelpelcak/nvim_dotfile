@@ -17,3 +17,5 @@ keymap("n", "<leader>fe", "<cmd>wincmd h<CR>", { noremap = true, silent = true, 
 keymap("n", "<leader>ff", ":Telescope find_files<CR>", { noremap = true, silent = true, desc = "Find Files" })
 keymap("n", "<leader>gr", ":Telescope live_grep<CR>", { noremap = true, silent = true, desc = "Live Grep" })
 
+ --  Commentary
+keymap("n", "<leader>cl", "<Plug>CommentaryLine", { desc = "Toggle comment line" })
