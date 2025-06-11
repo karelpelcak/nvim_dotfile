@@ -11,6 +11,7 @@ keymap("n", "<leader>w", ":w<CR>", { noremap = true, silent = true, desc = "Ulo≈
 
  -- Neovim tree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true, desc = "Toggle File Explorer" })
+keymap("n", "<leader>fe", "<cmd>wincmd h<CR>", { noremap = true, silent = true, desc = "Focus Neo-tree" })
 
  -- Telescope
 keymap("n", "<leader>ff", ":Telescope find_files<CR>", { noremap = true, silent = true, desc = "Find Files" })
