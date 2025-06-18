@@ -8,6 +8,13 @@ keymap("n", "<leader>dn", vim.diagnostic.goto_prev, { noremap = true, silent = t
 keymap("n", "<leader>dp", vim.diagnostic.goto_next, { noremap = true, silent = true })
 keymap({ "i", "n" }, "<C-s>", "<Esc>:w<CR>", { noremap = true, silent = true, desc = "Uložit soubor" })
 keymap("n", "<leader>w", ":w<CR>", { noremap = true, silent = true, desc = "Uložit soubor" })
+keymap("n", ";", ":", { noremap = true, silent = true, desc = "Command"})
+keymap("n", "<leader>vs", ":vsplit<CR>", { noremap = true, silent = true, desc = "Split screen"})
+keymap("n", "<leader>wh", "<C-w>h",  { noremap = true, silent = true, desc = "Move to left panel"})
+keymap("n", "<leader>wj", "<C-w>j",  { noremap = true, silent = true, desc = "Move to bottom panel"})
+keymap("n", "<leader>wk", "<C-w>k",  { noremap = true, silent = true, desc = "Move to top panel"})
+keymap("n", "<leader>wl", "<C-w>l",  { noremap = true, silent = true, desc = "Move to right panel"})
+
 
  -- Neovim tree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true, desc = "Toggle File Explorer" })
